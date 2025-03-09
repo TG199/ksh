@@ -32,7 +32,7 @@ func main() {
 		cmd.Stderr = os.Stderr
 
 		if err := cmd.Run(); err != nil {
-		fmt.Println(err.Error())
+		fmt.Printf("command '%s' not found\n but can be installed using sudo install '%s'\n", split[0], split[0])
 		}
 	}
 }
